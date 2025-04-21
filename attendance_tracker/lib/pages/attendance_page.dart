@@ -53,7 +53,7 @@ class _AttendancePageState extends State<AttendancePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Attendance'),
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: const Color.fromARGB(255, 255, 145, 48),
         foregroundColor: Colors.white,
       ),
       body: ListView(
@@ -76,7 +76,7 @@ class _AttendancePageState extends State<AttendancePage> {
                   children: [
                     Text(
                       className,
-                      style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold,color: Color.fromARGB(255, 0, 0, 0)),
                     ),
                     const SizedBox(height: 10),
                     ...classes[className]!.map((student) {
@@ -97,9 +97,9 @@ class _AttendancePageState extends State<AttendancePage> {
                                       }
                                     },
                                     style: ElevatedButton.styleFrom(
-                                      backgroundColor: isPresent ? Colors.green : Colors.grey,
+                                      backgroundColor: isPresent ? const Color.fromARGB(255, 0, 255, 8) : const Color.fromARGB(255, 229, 228, 228),
                                     ),
-                                    child: const Text('Present'),
+                                    child: const Text('Present', style: TextStyle(color: Color.fromARGB(255, 0, 0, 0))),
                                   ),
                                   const SizedBox(width: 8),
                                   ElevatedButton(
@@ -111,9 +111,9 @@ class _AttendancePageState extends State<AttendancePage> {
                                       }
                                     },
                                     style: ElevatedButton.styleFrom(
-                                      backgroundColor: !isPresent ? Colors.red : Colors.grey,
+                                      backgroundColor: !isPresent ? const Color.fromARGB(255, 255, 17, 0) : const Color.fromARGB(255, 229, 228, 228),
                                     ),
-                                    child: const Text('Absent'),
+                                    child: const Text('Absent',style: TextStyle(color: Color.fromARGB(255, 0, 0, 0))),
                                   ),
                                 ],
                               ),
@@ -131,16 +131,16 @@ class _AttendancePageState extends State<AttendancePage> {
                           );
                         },
                         icon: const Icon(Icons.check_circle),
-                        label: const Text('Submit Attendance'),
+                        label: const Text('Submit Attendance',style: TextStyle(color: Color.fromARGB(255, 255, 255, 255))),
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.blue,
+                          backgroundColor: const Color.fromARGB(255, 255, 145, 48),
                           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                         ),
                       )
                     else
                       const Text(
                         '✅ Attendance Submitted',
-                        style: TextStyle(color: Colors.green, fontWeight: FontWeight.bold),
+                        style: TextStyle(color: Colors.green, fontWeight: FontWeight.bold,),
                       ),
                   ],
                 ),

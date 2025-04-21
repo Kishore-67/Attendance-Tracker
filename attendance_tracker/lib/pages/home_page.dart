@@ -37,7 +37,10 @@ class HomePage extends StatelessWidget {
               icon: const Icon(Icons.how_to_reg),
               label: Text(
                 'Mark Attendance',
-                style: GoogleFonts.poppins(fontSize: 16),
+                style: GoogleFonts.poppins(
+                  fontSize: 16,
+                  color: Colors.white, // Change text color here
+                ),
               ),
               onPressed: () {
                 Navigator.push(
@@ -59,7 +62,10 @@ class HomePage extends StatelessWidget {
               icon: const Icon(Icons.school),
               label: Text(
                 'View Marks',
-                style: GoogleFonts.poppins(fontSize: 16),
+                style: GoogleFonts.poppins(
+                  fontSize: 16,
+                  color: Colors.white, // Change text color here
+                ),
               ),
               onPressed: () {
                 Navigator.push(
@@ -68,7 +74,7 @@ class HomePage extends StatelessWidget {
                 );
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.green.shade600,
+                backgroundColor: const Color.fromARGB(183, 0, 0, 0),
                 minimumSize: const Size(double.infinity, 50),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
