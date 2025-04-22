@@ -36,10 +36,10 @@ A simple Flutter application for teachers to mark attendance and enter student m
 ## 📸 Screenshots
 
 ### 🔹 Home Page
-![Home Page](assets/screenshots/home.jpg)
+![Home Page](attendance_tracker/assets/screenshots/home.jpg)
 
 ### 🔹 Attendance Page
-![Attendance Page](assets/screenshots/attendance.jpg)
+![Attendance Page](attendance_tracker/assets/screenshots/attendance.jpg)
 
 ### 🔹 Marks Page
 ![Marks Page](assets/screenshots/marks.jpg)
